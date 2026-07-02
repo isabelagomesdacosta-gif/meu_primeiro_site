@@ -8,64 +8,65 @@
 </head>
 
 <body>
+
     <header>
         <h1>Isabela</h1>
 
-        <nav> <!-- Seção de navegação do site-->
-            <ul> <!--Lista não ordenada para links do nosso menu-->
+        <nav>
+            <ul>
                 <li><a href="#sobre">Sobre mim</a></li>
                 <li><a href="#projeto">Projetos</a></li>
                 <li><a href="#contato">Contatos</a></li>
-                <li><a href="https://google.com.br/" target="_blank">Google</a></li>
-
+                <li>
+                    <a href="https://google.com.br/" target="_blank" rel="noopener noreferrer">
+                        Google
+                    </a>
+                </li>
             </ul>
+        </nav>
     </header>
 
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="https://lh3.googleusercontent.com/a/ACg8ocJa4tiUxg5aY-qqvklGo_LSODYJIsI5YNJwJ2X4EbibpFRUxjr7=s288-c-no"
-            alt="Foto de Isabela" title="Imagem de Perfil" width="200" height="200">
+        <img
+            src="https://lh3.googleusercontent.com/a/ACg8ocJa4tiUxg5aY-qqvklGo_LSODYJIsI5YNJwJ2X4EbibpFRUxjr7=s288-c-no"
+            alt="Foto de Isabela"
+            title="Imagem de Perfil"
+            width="200"
+            height="200">
 
         <article>
-
-            <p>Desde jovem, sempre fui fascinada por tecnologia e design. Comecei a aprender programação por conta
+            <p>
+                Desde jovem, sempre fui fascinada por tecnologia e design. Comecei a aprender programação por conta
                 própria e, ao longo dos anos, desenvolvi habilidades em diversas linguagens de programação e frameworks.
             </p>
-
         </article>
 
         <aside>
-
             <h3>Habilidades</h3>
 
-            <url>
+            <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-            </url>
-
+            </ul>
         </aside>
-
     </section>
 
     <section id="projeto">
         <h2>Projetos</h2>
 
         <article>
-
             <h3>Portfólio</h3>
             <p>Este foi o primeiro site que desenvolvi estudando Front-End.</p>
-
         </article>
     </section>
 
     <section id="habilidade">
-
         <h2>Habilidades e tecnologias</h2>
 
-        <table>
-
+        <table border="1">
             <thead>
                 <tr>
                     <th>Tecnologia</th>
@@ -84,7 +85,7 @@
                 <tr>
                     <td>CSS</td>
                     <td>Intermediário</td>
-                    <td>Experiência com flexbox, grid e animações CSS.</td>
+                    <td>Experiência com Flexbox, Grid e animações CSS.</td>
                 </tr>
 
                 <tr>
@@ -93,13 +94,12 @@
                     <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
                 </tr>
             </tbody>
-
         </table>
-
     </section>
 
     <footer>
-        <p>© 2026 Isabela Gomes da Costa. Todos os direitos reservados.</p>
+
+        <p>&copy; 2026 Isabela Gomes da Costa. Todos os direitos reservados.</p>
 
         <section id="contato">
             <h3>Contato</h3>
@@ -107,48 +107,63 @@
             <p>Tem um projeto em mente? Entre em contato!</p>
 
             <address>
-                Email: <a href="mailto:isabelagomesdacosta@gmail.com">isabelagomesdacosta@gmail.com</a><br>
-                Telefone: <a href="tel:+5547992641972">+55 47 99264-1972</a>
+                Email:
+                <a href="mailto:isabelagomesdacosta@gmail.com">
+                    isabelagomesdacosta@gmail.com
+                </a>
+                <br>
+
+                Telefone:
+                <a href="tel:+5547992641972">
+                    +55 47 99264-1972
+                </a>
             </address>
 
             <form action="">
 
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" required> <br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" required> <br>
+                <br><br>
 
-                <label for="telefone">Telefone: </label>
-                <input type="tel" id="telefone" name="telefone"> <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="assunto">Assunto: </label>
+                <br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <br><br>
+
+                <label for="assunto">Assunto:</label>
                 <select name="assunto" id="assunto">
                     <option value="orcamento">Orçamento</option>
                     <option value="duvida">Dúvida</option>
                     <option value="outro">Outro</option>
                 </select>
 
-                <br>
+                <br><br>
 
-                <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="10" rows="5" required></textarea>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" cols="40" rows="5" required></textarea>
 
-                <br>
+                <br><br>
 
                 <input type="checkbox" id="inscricao" name="inscricao">
-                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+                <label for="inscricao">
+                    Deseja receber minha newsletter? Fique por dentro.
+                </label>
 
-                <br>
+                <br><br>
 
                 <input type="submit" value="Enviar mensagem">
 
             </form>
-
-
         </section>
 
     </footer>
+
 </body>
 
 </html>
